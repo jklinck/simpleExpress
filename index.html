@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		code{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Simple express server</h1>
+	<hr>
+	<p>If the view files are in the root directory then use <code>app.use(express.static("./"));</code></p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-This is what is being used in server.js</p>
+	<hr>
+	<p>If the view files are not in the root directory then use <code>app.use(express.static(path.join(__dirname+"/views")));</code> and add <code>var path = require("path");</code> at the top of server.js</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-This is the code that is commented out in lines 2 and 6 in server.js</p>
+</body>
+</html>
