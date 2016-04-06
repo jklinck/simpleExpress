@@ -12,7 +12,8 @@ app.get("/",function(req,res){
 	res.render("index");
 });
 
-app.listen(8000,function(){
-	console.log("listening on port 8000");
+app.listen(process.env.PORT || 3000,function(){
+	console.log("listening on port 3000");
 });
+
 
